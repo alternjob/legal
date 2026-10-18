@@ -1,0 +1,54 @@
+# Publication des documents juridiques de Horméia (CGU, politique de confidentialité, suppression de
+# compte, confirmation d'e-mail).
+#
+# Les pages sont GÉNÉRÉES dans le dépôt de l'application (privé) par `scripts/buildLegalDocs.js`,
+# depuis les écrans PrivacyScreen, TermsScreen et DataDeletionScreen, puis copiées ici. Ne pas les
+# éditer à la main : la prochaine copie écraserait la modification.
+#
+# Aucune commande de build : le dépôt contient déjà le site prêt à servir.
+
+[build]
+  publish = "."
+
+# Domaine canonique. PLACÉE EN PREMIER : Netlify applique les règles dans l'ordre du fichier, donc
+# une réécriture 200 placée avant absorberait la requête et le domaine par défaut continuerait de
+# servir les pages en double (mauvais pour le référencement, et deux adresses à maintenir).
+[[redirects]]
+  from = "https://hormeia.netlify.app/*"
+  to = "https://legal.alternjob.com/:splat"
+  status = 301
+  force = true
+
+# URL sans extension, en plus des URL en .html. status = 200 : on sert le fichier sans redirection
+# visible, les deux adresses restent donc valides — utile quand une URL est déjà déclarée quelque
+# part (fiches App Store et Play Console, notamment).
+[[redirects]]
+  from = "/cgu"
+  to = "/cgu.html"
+  status = 200
+
+[[redirects]]
+  from = "/confidentialite"
+  to = "/confidentialite.html"
+  status = 200
+
+[[redirects]]
+  from = "/suppression-compte"
+  to = "/suppression-compte.html"
+  status = 200
+
+# Cible de `emailRedirectTo` (Supabase) : l'URL déclarée dans les Redirect URLs est SANS extension.
+# Elle doit correspondre au caractère près, Supabase comparant la chaîne exacte.
+[[redirects]]
+  from = "/confirmation"
+  to = "/confirmation.html"
+  status = 200
+
+# Pages publiques et statiques : aucune ressource distante, aucun cookie.
+# Ces en-têtes ne coûtent rien et ferment les usages détournés les plus évidents.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "no-referrer"
