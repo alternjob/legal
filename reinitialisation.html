@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horméia - nouveau mot de passe</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.1rem 4rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #071B4D; background: #fff; overflow-wrap: break-word;
+  }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 .25rem; }
+  .version { color: #5B6475; font-size: .9rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .75rem; padding-bottom: .35rem; border-bottom: 2px solid #E1E6EF; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; color: #3B4254; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  dt { font-weight: 700; margin-top: 1rem; }
+  dd { margin: .25rem 0 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #E1E6EF; color: #5B6475; font-size: .85rem; }
+  a { color: #578DEA; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #E1E6EF; background: #0B1020; }
+    h3 { color: #9AA3B4; }
+    h2, footer { border-color: #23305C; }
+    .version, footer { color: #9AA3B4; }
+  }
+</style>
+</head>
+<body>
+<h1>Choisis ton nouveau mot de passe</h1>
+<p>Sur le téléphone où tu as demandé ce lien, l’application Horméia s’ouvre et te propose de choisir ton nouveau mot de passe.</p>
+<p id="ouvrir" hidden><a href="hormeia://auth/reset">Ouvrir Horméia</a></p>
+<p>Ce lien ne fonctionne que sur ce téléphone, et seul le dernier e-mail reçu est valable. Si tu l’as ouvert depuis un ordinateur, ouvre Horméia sur ton téléphone, touche « Mot de passe oublié ? » et ouvre le nouveau lien depuis ce téléphone.</p>
+<hr>
+<p lang="en"><strong>Choose your new password.</strong> On the phone where you requested this link, the Horméia app opens and lets you choose a new password. This link only works on that phone, and only the most recent email is valid. If you opened it on a computer, open Horméia on your phone, tap “Forgot password?” and open the new link from that phone.</p>
+<script>
+// Sur telephone uniquement : on passe la main a l'application en conservant les parametres recus
+// (le code de Supabase), que useAuthDeepLink echange contre une session de recuperation.
+(function () {
+  try {
+    // iPadOS en mode bureau se presente comme un Mac : on le reconnait a son ecran tactile.
+    var mobile = /android|iphone|ipad|ipod/i.test(navigator.userAgent) ||
+      (/macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+    if (!mobile) return;
+    var lien = 'hormeia://auth/reset' + window.location.search;
+    // Repli : certains navigateurs integres (apercu de messagerie) bloquent l'ouverture automatique,
+    // faute de geste de la personne. Le bouton, lui, est un geste.
+    var bouton = document.getElementById('ouvrir');
+    if (bouton) {
+      bouton.querySelector('a').setAttribute('href', lien);
+      bouton.hidden = false;
+    }
+    window.location.href = lien;
+  } catch (e) {
+    // Aucune remontée : l'échec d'ouverture n'est pas une erreur, le message ci-dessus suffit.
+  }
+})();
+</script>
+<!-- Généré le 2026-10-25. Ne pas éditer à la main. -->
+</body>
+</html>

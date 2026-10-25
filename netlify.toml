@@ -44,6 +44,13 @@
   to = "/confirmation.html"
   status = 200
 
+# Cible de `redirectTo` pour la réinitialisation du mot de passe (Supabase) : URL SANS extension, identique
+# au caractère près à celle déclarée dans les Redirect URLs.
+[[redirects]]
+  from = "/reinitialisation"
+  to = "/reinitialisation.html"
+  status = 200
+
 # Pages publiques et statiques : aucune ressource distante, aucun cookie.
 # Ces en-têtes ne coûtent rien et ferment les usages détournés les plus évidents.
 [[headers]]
