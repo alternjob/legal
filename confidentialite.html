@@ -33,7 +33,7 @@
 </head>
 <body>
 <h1>POLITIQUE DE CONFIDENTIALITÉ - HORMÉIA</h1>
-<p class="version">Version 1.10 - En vigueur au 12/10/2026</p>
+<p class="version">Version 1.12 - En vigueur au 28/10/2026</p>
 <h2>Préambule</h2>
 <p>AlternJob accorde de l’importance à la protection de tes données. Cette politique explique quelles données l’application Horméia (« l’Application ») collecte, pourquoi, sur quelle base légale, avec qui elles sont partagées, combien de temps elles sont conservées et quels sont tes droits. Elle fait partie intégrante des Conditions Générales d’Utilisation.</p>
 <h2>1. Responsable du traitement</h2>
@@ -48,8 +48,9 @@
 <li>Nom, prénom (facultatif).</li>
 <li>Numéro de téléphone, adresse postale, ville (facultatif).</li>
 <li>Formation, établissement, profil LinkedIn, statut de recherche (stage, alternance, contrat).</li>
-<li>Date de naissance, collectée pour vérifier l’âge minimum d’accès au service et connaître la tranche d’âge de nos utilisateurs.</li>
+<li>Date de naissance (facultative), pour connaître la tranche d’âge de nos utilisateurs, adapter le ton des lettres préparées et, si tu as moins de 18 ans, te signaler les offres encadrées pour les mineurs (§ 9).</li>
 <li>Photo de profil (facultatif).</li>
+<li>Niveau d’études et ville, déduits par l’IA à partir de ton CV lorsque tu le fais analyser, puis enregistrés dans ton profil.</li>
 <li>Si tu utilises la connexion Google ou Apple : les informations d’identité transmises par ces services (identifiant, email, nom).</li>
 </ul>
 <h3>2.2 Contenus que tu crées ou importes</h3>
@@ -75,15 +76,21 @@
 <ul>
 <li>Compteurs d’usage : nombre de CV créés, de notations, d’entretiens réalisés, afin de gérer les quotas liés à ton offre.</li>
 <li>Ouvertures de l’Application : au plus une par jour, sans aucun contenu ni donnée de localisation, à des fins de mesure de fréquentation.</li>
+<li>Mesure d’usage, côté serveur : quand tu utilises la notation, la création ou l’amélioration de CV, les lettres de motivation, l’audit LinkedIn, la simulation d’entretien (voix de l’intervieweur comprise) ou l’onglet Offres (recherche d’offres, préparation d’un dossier de candidature), nos serveurs enregistrent les étapes de ton parcours : début, étapes franchies, aboutissement ou erreur (avec un code technique choisi dans une liste fermée), leur date, leur durée, le nombre d’unités de texte (jetons) traitées par l’IA, la durée de la voix de synthèse, le modèle d’IA utilisé et une estimation du coût correspondant. Jamais le contenu : ni ton CV, ni tes lettres, ni tes réponses, ni l’annonce, ni tes critères de recherche.</li>
+<li>Mesure d’usage, côté Application : dans l’onglet Offres, l’Application enregistre l’affichage d’une offre à l’écran pendant au moins une seconde, l’ouverture de son détail, le clic vers l’annonce d’origine et le fait que tu as pris une décision sur l’offre, avec l’identifiant de l’offre, l’emplacement dans l’écran, la version de l’Application et le type d’appareil (iOS, Android ou web). Un clic vers l’annonce d’origine n’est jamais enregistré comme une candidature.</li>
 <li>Adresse IP : transmise lorsque l’Application interroge l’API publique du site alternjob.com pour afficher les contenus éditoriaux de l’accueil. Nous ne la conservons pas ; elle est reçue par Cloudflare, qui héberge ce site (§ 5).</li>
 <li>Adresse IP : également transmise lorsque l’Application vérifie, à son lancement, si une mise à jour de son contenu est disponible. Cette vérification ne transmet aucune donnée de compte : seuls la plateforme, le canal de distribution et un identifiant technique de version sont envoyés (§ 5).</li>
+<li>Retours que tu nous envoies : ton avis sur un résultat et le commentaire libre que tu choisis d’écrire (2 000 caractères au plus).</li>
+<li>Adresse IP : également transmise à l’API publique geo.api.gouv.fr, service de l’État, lorsque tu saisis une commune pour en vérifier le nom (§ 5).</li>
 </ul>
+<p>Mesure d’usage : ces événements sont rattachés à ton compte par son identifiant interne ; ils ne contiennent ni ton nom, ni ton email, ni aucun texte que tu as écrit ou importé. Ils servent à piloter l’Application : repérer les étapes où les utilisateurs rencontrent des difficultés ou des erreurs, mesurer les temps de réponse et le coût de l’IA, et vérifier que l’Application aide réellement à progresser. Ils sont hébergés par Supabase dans l’Union européenne (§ 5), consultables uniquement par les administrateurs habilités d’Alternjob, et ne sont transmis à aucun tiers, ni établissement partenaire, ni annonceur. Ils ne servent à aucune publicité et à aucune décision te concernant (§ 10). Tu peux t’y opposer (§ 8).</p>
+<p>D’autres écrans de l’Application pourront à l’avenir enregistrer des événements de même nature, toujours sans aucun contenu. Si une nouvelle catégorie de données devait être collectée, la présente politique serait mise à jour au préalable (§ 12).</p>
 <p>Prévention du contournement des quotas : lorsqu’un compte est supprimé, nous conservons une empreinte cryptographique irréversible de l’adresse email associée, accompagnée du nombre d’analyses déjà effectuées pendant le mois en cours. Cette empreinte ne permet pas de retrouver l’adresse ; elle sert uniquement à vérifier, si un compte est recréé avec la même adresse avant la fin du mois, que le décompte reprend là où il s’était arrêté. Aucune adresse email, aucun nom et aucun identifiant de compte ne sont conservés.</p>
 <h3>2.4 Données de facturation</h3>
 <p>Si tu souscris une offre payante : nom, email, message associé à la réservation, historique des transactions. Tes coordonnées bancaires ne transitent jamais par nos serveurs (voir § 5.3).</p>
 <h3>2.5 Ce que nous ne collectons pas</h3>
 <ul>
-<li>Aucune donnée de localisation.</li>
+<li>Aucune géolocalisation de ton appareil : seule la commune que tu choisis pour la recherche d’offres, avec ses coordonnées, est enregistrée dans tes critères.</li>
 <li>Aucun outil publicitaire ni traceur tiers à des fins de ciblage.</li>
 <li>Aucune revente de données.</li>
 </ul>
@@ -96,9 +103,9 @@
 <h2>4. Finalités et bases légales</h2>
 <dl>
 <dt>Création et gestion du compte</dt>
-<dd>Te permettre d’accéder au service. Base légale : exécution du contrat (6.1.b). Conservation : durée du compte + 3 ans d’inactivité.</dd>
-<dt>Vérification de l’âge</dt>
-<dd>Respecter l’âge minimum légal. Base légale : obligation légale (6.1.c) et contrat. Conservation : durée du compte.</dd>
+<dd>Te permettre d’accéder au service. Base légale : exécution du contrat (6.1.b). Conservation : durée du compte.</dd>
+<dt>Âge et adaptation du service</dt>
+<dd>Connaître la tranche d’âge de nos utilisateurs, adapter le ton des lettres et signaler aux mineurs les offres encadrées pour eux (§ 9). La date de naissance est facultative. Base légale : intérêt légitime (6.1.f). Conservation : durée du compte.</dd>
 <dt>Notation, création et import de CV, audit LinkedIn, simulation d’entretien, génération, analyse et optimisation de lettres de motivation</dt>
 <dd>Fournir les fonctionnalités demandées. Base légale : exécution du contrat (6.1.b). Conservation : voir § 6.</dd>
 <dt>Recherche d’offres, score de correspondance et préparation de candidatures (onglet Offres)</dt>
@@ -110,13 +117,17 @@
 <dt>Compteurs d’usage et quotas</dt>
 <dd>Appliquer les limites liées à ton offre. Base légale : exécution du contrat (6.1.b). Conservation : durée du compte.</dd>
 <dt>Mesure de fréquentation (ouvertures)</dt>
-<dd>Comprendre l’audience et améliorer le service. Base légale : intérêt légitime (6.1.f). Conservation : 13 mois, sous forme agrégée au-delà.</dd>
+<dd>Comprendre l’audience et améliorer le service. Base légale : intérêt légitime (6.1.f). Conservation : durée du compte.</dd>
+<dt>Mesure d’usage et pilotage de l’Application</dt>
+<dd>Comprendre comment l’Application est utilisée, repérer les difficultés et les erreurs, mesurer les temps de réponse et le coût de l’IA, et suivre les progrès des utilisateurs dans leurs parcours, afin d’améliorer le service. Données rattachées à ton compte, sans aucun contenu (§ 2.3). Base légale : intérêt légitime (6.1.f) ; tu peux t’y opposer (§ 8). Conservation : 12 mois à compter de chaque événement ; effacement dès la suppression de ton compte.</dd>
+<dt>Retours sur les résultats</dt>
+<dd>Améliorer la qualité des analyses à partir de ton avis et de ton commentaire. Base légale : intérêt légitime (6.1.f). Conservation : durée du compte.</dd>
 <dt>Affichage des contenus éditoriaux d’alternjob.com</dt>
 <dd>Te proposer les articles et podcasts publiés sur notre site. Base légale : intérêt légitime (6.1.f). Donnée concernée : adresse IP, transmise à l’hébergement du site lors de l’appel. Conservation : aucune de notre fait.</dd>
 <dt>Paiement et facturation</dt>
 <dd>Traiter les transactions. Base légale : contrat et obligation légale (6.1.c). Conservation : 10 ans (art. L123-22 C. com.).</dd>
 <dt>Sécurité, prévention de la fraude et des abus</dt>
-<dd>Protéger le service et les utilisateurs. Base légale : intérêt légitime (6.1.f). Conservation : 12 mois pour les journaux techniques.</dd>
+<dd>Protéger le service et les utilisateurs. Base légale : intérêt légitime (6.1.f). Conservation : 12 mois pour les journaux d’usage de l’IA ; journaux d’erreurs : durée du compte.</dd>
 <dt>Prévention du contournement des quotas gratuits</dt>
 <dd>Empêcher qu’un compte supprimé puis recréé avec la même adresse ne réinitialise les limites mensuelles de l’offre gratuite. Base légale : intérêt légitime (6.1.f). Conservation : jusqu’à la fin du mois concerné, un mois au maximum.</dd>
 <dt>Communications relatives au service (email transactionnel)</dt>
@@ -149,6 +160,10 @@
 <dd>Détection et diagnostic des pannes de l’Application. Données concernées : type et pile d’appel des erreurs, écran concerné, plateforme, version de l’Application et identifiant technique de mise à jour. Aucune donnée de compte, aucun contenu que tu as créé, aucune adresse IP conservée. Localisation : Union européenne (région Allemagne). Éditeur établi aux États-Unis.</dd>
 <dt>ElevenLabs</dt>
 <dd>Voix de synthèse de l’intervieweur pendant les simulations d’entretien. Données concernées : le texte des questions de l’intervieweur, rédigé par notre IA, qui peut reprendre des éléments de ton CV ou de tes réponses. Ta voix ne lui est jamais transmise, ni ton adresse email, ni ton identifiant de compte. ElevenLabs Poland sp. z o.o. (Pologne), filiale d’Eleven Labs Inc. (États-Unis). Les données sont stockées aux États-Unis, le transfert est encadré par des clauses contractuelles types, et elles sont conservées selon la politique d’ElevenLabs.</dd>
+<dt>France Travail, La bonne alternance, Adzuna</dt>
+<dd>Fourniture des offres d’emploi. Données concernées : métier visé (codes ROME ou mots-clés), commune ou ses coordonnées, rayon de recherche, type de contrat. Jamais ton nom, ton email ni ton identifiant (§ 2.2).</dd>
+<dt>API Géo (geo.api.gouv.fr)</dt>
+<dd>Vérification du nom des communes saisies. Données concernées : nom de la commune saisie, adresse IP. Service de l’État français.</dd>
 <dt>Google / Apple</dt>
 <dd>Authentification (si tu l’utilises) et reconnaissance vocale native. Données concernées : identifiants de connexion ; audio dicté, traité par Apple ou Google selon ton appareil. Encadrement : selon leurs politiques respectives.</dd>
 </dl>
@@ -168,7 +183,6 @@
 <h2>6. Durées de conservation</h2>
 <ul>
 <li>Compte actif : tes données sont conservées tant que ton compte est actif.</li>
-<li>Inactivité : en l’absence de connexion pendant 3 ans, ton compte est signalé puis supprimé après relance restée sans réponse.</li>
 <li>Suppression volontaire : tu peux supprimer tes CV et tes photos à tout moment depuis l’Application. Quand tu supprimes ton compte, l’accès cesse immédiatement : ta session est fermée, tes données ne sont plus lisibles ni utilisables, et ton adresse email est libérée sur-le-champ - tu peux recréer un compte avec la même adresse sans attendre.</li>
 <li>Dernière notation de CV : conservée jusqu’à la notation suivante, qui la remplace, et au plus tard jusqu’à la suppression de ton compte.</li>
 <li>Archive de restauration : pendant 29 jours, nous conservons une copie de tes données de compte (profil, CV, abonnement) dans un espace d’archive isolé, inaccessible depuis l’Application. Cette copie sert uniquement à réparer une suppression accidentelle ou erronée, à ta demande ; elle ne peut être réactivée que manuellement par nos soins et n’est communiquée à personne. Passé ce délai, elle est détruite automatiquement et définitivement.</li>
@@ -183,7 +197,9 @@
 <li>Dossiers de candidature : tant que ton compte est actif, effacés avec lui ; une nouvelle préparation pour la même offre remplace la précédente.</li>
 <li>Jeton d’accès LinkedIn : conservé chiffré jusqu’à la déconnexion (que tu peux effectuer à tout moment depuis l’écran d’audit) ou la suppression du compte.</li>
 <li>Facturation : conservée 10 ans en archivage à accès restreint (obligation comptable).</li>
-<li>Journaux techniques et sécurité : 12 mois.</li>
+<li>Journaux d’usage de l’IA et métriques d’analyse : 12 mois.</li>
+<li>Mesure d’usage (événements de parcours) : 12 mois à compter de chaque événement, puis effacement automatique ; effacée dès la suppression de ton compte, sans copie dans l’archive de restauration. Les événements en attente d’envoi sur ton appareil y restent 7 jours au plus et sont effacés dès leur envoi, à la déconnexion ou à la suppression du compte.</li>
+<li>Ouvertures de l’Application, retours et journaux d’erreurs : tant que ton compte existe ; à la suppression du compte, les ouvertures et les retours sont effacés et les journaux d’erreurs sont détachés de ton identité.</li>
 </ul>
 <h2>7. Hébergement et sécurité</h2>
 <p>Tes données sont hébergées par Supabase au sein de l’Union européenne.</p>
@@ -194,7 +210,6 @@
 <ul>
 <li>Chiffrement en transit (HTTPS/TLS) et au repos.</li>
 <li>Cloisonnement strict des accès : chaque utilisateur n’accède qu’à ses propres informations (règles de sécurité au niveau des lignes, Row Level Security).</li>
-<li>Authentification, avec option de double facteur.</li>
 <li>Accès interne limité aux personnes habilitées, sur la base du besoin d’en connaître.</li>
 <li>Journalisation des accès et des opérations sensibles.</li>
 <li>Sauvegardes chiffrées.</li>
@@ -214,21 +229,27 @@
 <li>Directives post-mortem : définir le sort de tes données après ton décès.</li>
 </ul>
 <p>Retrait du consentement LinkedIn : tu peux révoquer à tout moment l’autorisation d’accès à ton profil LinkedIn via le bouton « Déconnecter » de l’écran d’audit, ce qui supprime le jeton d’accès conservé.</p>
+<p>Opposition à la mesure d’usage : tu peux t’opposer à tout moment à la mesure d’usage décrite au § 2.3 en nous écrivant à info@alternjob.com. Nous te répondons dans le délai indiqué ci-dessous, en te disant la suite donnée à ta demande. Ton opposition ne change rien à ton accès à l’Application ni à ton offre. Dans tous les cas, la suppression de ton compte efface ces événements (§ 6).</p>
 <p>Comment les exercer : écris-nous à info@alternjob.com. Nous répondons dans un délai d’un mois (prorogeable de deux mois en cas de complexité). Une pièce d’identité pourra être demandée en cas de doute raisonnable sur ton identité ; elle sera supprimée immédiatement après vérification.</p>
 <p>Réclamation : tu peux introduire une réclamation auprès de la CNIL - 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 - www.cnil.fr.</p>
 <h2>9. Mineurs</h2>
 <p>L’Application est réservée aux personnes âgées de 15 ans au minimum. Si tu as moins de 18 ans, tu dois avoir obtenu l’autorisation du ou des titulaires de l’autorité parentale. Si nous apprenons qu’un compte a été créé par une personne de moins de 15 ans, il sera supprimé et les données effacées sans délai. Un titulaire de l’autorité parentale peut nous saisir à info@alternjob.com.</p>
 <p>Ta date de naissance sert aussi à adapter le ton des lettres préparées et, si tu as moins de 18 ans, à te signaler les offres qui semblent comporter un travail interdit ou encadré pour les mineurs (travail de nuit, service d’alcool, travail en hauteur). Ce signalement est indicatif : il ne remplace pas la vérification auprès de l’employeur.</p>
+<p>La mesure d’usage (§ 2.3) s’applique de la même manière si tu as entre 15 et 18 ans : elle ne porte sur aucun contenu que tu écris, ne sert à aucune publicité ni à aucune décision te concernant, et tu peux t’y opposer à tout moment (§ 8).</p>
 <h2>10. Décisions automatisées et profilage</h2>
 <p>Les scores, analyses et recommandations générés par l’IA sont purement indicatifs. Ils ne sont jamais transmis automatiquement à un employeur ou à un recruteur, et ne produisent aucun effet juridique ni aucun effet significatif à ton égard au sens de l’article 22 du RGPD. Tu peux à tout moment ignorer, corriger ou supprimer tout contenu généré par l’IA.</p>
 <p>Le score de correspondance d’une offre est calculé par des règles fixes à partir de tes critères ; il est indicatif et ne masque aucune offre. Aucun dossier de candidature n’est transmis à un employeur sans ton action.</p>
+<p>La mesure d’usage (§ 2.3) sert à améliorer l’Application dans son ensemble. Elle ne produit aucune décision te concernant : elle ne modifie ni ton offre, ni tes quotas, ni les offres qui te sont proposées, ni leur score de correspondance.</p>
 <h2>11. Cookies et traceurs</h2>
-<p>L’Application mobile n’utilise aucun cookie publicitaire ni traceur tiers. Seuls des identifiants techniques strictement nécessaires au fonctionnement (session, authentification) sont utilisés ; ils sont exemptés de consentement.</p>
+<p>L’Application n’utilise aucun cookie publicitaire ni traceur tiers, et ne lit aucun identifiant publicitaire de ton appareil. Elle utilise des identifiants techniques nécessaires à son fonctionnement (session, authentification), exemptés de consentement.</p>
+<p>Pour la mesure d’usage (§ 2.3), l’Application conserve temporairement sur ton appareil, ou dans le stockage de ton navigateur pour la version web, les événements qui n’ont pas encore pu être envoyés, par exemple en l’absence de réseau : 7 jours au plus, effacés dès leur envoi, à la déconnexion ou à la suppression de ton compte. Les événements d’un même lancement sont regroupés par un identifiant de séance tiré au hasard, gardé en mémoire et jamais enregistré sur ton appareil.</p>
 <h2>12. Modification de la présente politique</h2>
 <p>Toute modification substantielle te sera notifiée par email et/ou notification in-app. La date de dernière mise à jour figure ci-dessous.</p>
-<p>Dernière mise à jour : 12/10/2026 - Contact : info@alternjob.com.</p>
+<p>Dernière mise à jour : 28/10/2026 - Contact : info@alternjob.com.</p>
 <h2>13. Historique des versions</h2>
 <ul>
+<li>Version 1.12 - 28/10/2026 : nouvelle finalité de mesure d’usage et de pilotage de l’Application, rattachée au compte et sans aucun contenu (§ 2.3, § 4, § 6) ; conservation temporaire des événements non envoyés sur l’appareil et identifiant de séance en mémoire (§ 11) ; droit d’opposition à cette mesure (§ 8) ; précisions pour les 15 à 17 ans (§ 9) et sur l’absence de décision automatisée (§ 10).</li>
+<li>Version 1.11 - 24/10/2026 : retrait de la mention d’un double facteur d’authentification et de la vérification de l’âge à l’inscription, qui n’existent pas dans l’Application ; date de naissance décrite comme facultative ; durées de conservation alignées sur celles réellement appliquées (mesure de fréquentation, retours, journaux, comptes inactifs) ; déclaration des retours, du niveau d’études et de la ville déduits du CV, de France Travail, La bonne alternance, Adzuna et de l’API Géo de l’État ; précision sur la localisation.</li>
 <li>Version 1.10 - 12/10/2026 : archive de restauration de 29 jours (et non 30), durée réellement appliquée ; reconnaissance vocale de la dictée décrite comme assurée par Apple ou Google selon l’appareil, l’audio pouvant être traité par leurs serveurs ; déclaration d’ElevenLabs parmi les destinataires, pour la voix de l’intervieweur ; abonnement : précision sur la fiche client conservée par RevenueCat ; révocation de l’autorisation Apple lors de la suppression d’un compte connecté avec Apple.</li>
 <li>Version 1.9 - 10/10/2026 : onglet Offres - critères de recherche, décisions sur les offres et dossiers de candidature conservés ; offres transmises à Anthropic sans les coordonnées du recruteur ; sources France Travail, La bonne alternance et Adzuna ; redirection vers adzuna.fr pour l’annonce complète d’une offre Adzuna.</li>
 <li>Version 1.8 - 24/09/2026 : adresse complète du siège de l’éditeur, dans la présente politique et dans les conditions générales d’utilisation ; aucun autre changement.</li>
@@ -237,7 +258,7 @@
 <li>Version 1.5 - 16/08/2026 : déclaration de RevenueCat, Cal.com, OVH et Cloudflare parmi les destinataires ; mention de la transmission de l’adresse IP lors de la lecture des contenus éditoriaux d’alternjob.com.</li>
 <li>Version 1.4 - 03/08/2026 : version précédente.</li>
 </ul>
-<footer>Version 1.10 - En vigueur au 12/10/2026</footer>
-<!-- Généré depuis les écrans de l'application le 2026-10-18. Ne pas éditer à la main. -->
+<footer>Version 1.12 - En vigueur au 28/10/2026</footer>
+<!-- Généré depuis les écrans de l'application le 2026-10-28. Ne pas éditer à la main. -->
 </body>
 </html>
